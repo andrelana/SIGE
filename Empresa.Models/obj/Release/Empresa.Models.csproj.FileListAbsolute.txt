@@ -1,0 +1,6 @@
+C:\Users\andre\source\repos\Empresa\Empresa.Models\bin\Release\Empresa.Models.dll
+C:\Users\andre\source\repos\Empresa\Empresa.Models\bin\Release\Empresa.Models.pdb
+C:\Users\andre\source\repos\Empresa\Empresa.Models\obj\Release\Empresa.Models.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\Empresa\Empresa.Models\obj\Release\Empresa.Models.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\Empresa\Empresa.Models\obj\Release\Empresa.Models.dll
+C:\Users\andre\source\repos\Empresa\Empresa.Models\obj\Release\Empresa.Models.pdb

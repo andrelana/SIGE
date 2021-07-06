@@ -1,0 +1,9 @@
+C:\Users\andre\source\repos\Empresa\Empresa.Db\bin\Release\Empresa.Db.dll
+C:\Users\andre\source\repos\Empresa\Empresa.Db\bin\Release\Empresa.Db.pdb
+C:\Users\andre\source\repos\Empresa\Empresa.Db\bin\Release\Empresa.Models.dll
+C:\Users\andre\source\repos\Empresa\Empresa.Db\bin\Release\Empresa.Models.pdb
+C:\Users\andre\source\repos\Empresa\Empresa.Db\obj\Release\Empresa.Db.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\Empresa\Empresa.Db\obj\Release\Empresa.Db.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\Empresa\Empresa.Db\obj\Release\Empresa.Db.csproj.CopyComplete
+C:\Users\andre\source\repos\Empresa\Empresa.Db\obj\Release\Empresa.Db.dll
+C:\Users\andre\source\repos\Empresa\Empresa.Db\obj\Release\Empresa.Db.pdb
