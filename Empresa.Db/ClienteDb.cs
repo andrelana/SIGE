@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Empresa.Models;
+using System.Data;
 
 namespace Empresa.Db
 {
@@ -111,6 +112,30 @@ namespace Empresa.Db
             reader.Close();
             con.Close();
             return cliente;
+        }
+        public int ValidaClienteUnico(Cliente cliente)
+        {
+            string sql = "exec stp_ed_valida_cliente_unico @Id, @Nome, @Email, @Telefone";
+            var con = new SqlConnection(Db.Conexao);
+            var cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@Id", cliente.Id);
+            cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
+            cmd.Parameters.AddWithValue("@Email", cliente.Email);
+            cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            int result = 0;
+            if (reader.Read())
+            {
+                result = Convert.ToInt32(reader["Result"]);
+            }
+                
+            reader.Close();
+            con.Close();
+           
+            return result;
         }
         
     }

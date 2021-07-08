@@ -36,17 +36,46 @@ namespace Empresa.UI.Web.Controllers
         [HttpPost]
         public ActionResult Create(Cliente cliente)
         {
-            try
-            {
-                var db = new ClienteDb();
-                db.incluir(cliente);
+            var db = new ClienteDb();
+            int Result = db.ValidaClienteUnico(cliente);
 
-                return RedirectToAction("Index");
-            }
-            catch
+            if(Result < 0)
             {
+                try
+                {
+                    db.incluir(cliente);
+
+                    return RedirectToAction("Index");
+                }
+                catch
+                {
+                    return View(cliente);
+                }
+                
+            }
+            else
+            {
+                switch (Result)
+                {
+                    case 2:
+                        ModelState.AddModelError("", "O Id do usuário já está em uso");
+                        break;
+                    case 3:
+                        ModelState.AddModelError("", "Nome do usuário já está em uso para outro usuário cadastrado");
+                        break;
+                    case 4:
+                        ModelState.AddModelError("", "E-mail do usuário já está em uso para outro cadastro");
+                        break;
+                    case 5:
+                        ModelState.AddModelError("", "Telefone informado já está em uso para outro usuário");
+                        break;
+                    default:
+                        ModelState.AddModelError("", "Algo de errado ocorreu durante a validação de cadastro único");
+                        break;
+                }
                 return View(cliente);
             }
+            
         }
 
         // GET: Cliente/Edit/5
