@@ -11,7 +11,6 @@ C:\PROJETOS\Empresa\Empresa.Models\obj\Debug\Empresa.Models.dll
 C:\PROJETOS\Empresa\Empresa.Models\obj\Debug\Empresa.Models.pdb
 C:\PROJETOS\SIGE\Empresa.Models\bin\Debug\Empresa.Models.dll
 C:\PROJETOS\SIGE\Empresa.Models\bin\Debug\Empresa.Models.pdb
-C:\PROJETOS\SIGE\Empresa.Models\obj\Debug\Empresa.Models.csproj.AssemblyReference.cache
 C:\PROJETOS\SIGE\Empresa.Models\obj\Debug\Empresa.Models.csproj.CoreCompileInputs.cache
 C:\PROJETOS\SIGE\Empresa.Models\obj\Debug\Empresa.Models.dll
 C:\PROJETOS\SIGE\Empresa.Models\obj\Debug\Empresa.Models.pdb

@@ -17,7 +17,8 @@ namespace Empresa.Db
 
             var cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "INSERT INTO Cliente (Id, Nome, Email, Telefone) Values (@Id, @Nome, @Email, @Telefone)";
+            //cmd.CommandText = "INSERT INTO Cliente (Id, Nome, Email, Telefone) Values (@Id, @Nome, @Email, @Telefone)";
+            cmd.CommandText = "exec stp_ed_inclui_cliente @Id, @Nome, @Email, @Telefone";
             cmd.Parameters.AddWithValue("@Id", Convert.ToString(cliente.Id));
             cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
             cmd.Parameters.AddWithValue("@Email", cliente.Email);
@@ -34,12 +35,17 @@ namespace Empresa.Db
 
             var cmd = new SqlCommand();
             cmd.Connection = con;
+            string proc = "exec stp_ed_altera_cliente ";
+            proc += Convert.ToString(cliente.Id) + ", ";
+            proc += "'" + cliente.Nome + "', ";
+            proc += "'" + cliente.Email + "', ";
+            proc += "'" + cliente.Telefone + "'";
             //cmd.CommandText = "UPDATE Cliente set Nome = @Nome,Email = @Email, Telefone = @Telefone WHERE Id = @Id";
-            cmd.CommandText = "exec stp_ed_altera_cliente @Id, @Nome, @Email, @Telefone";
-            cmd.Parameters.AddWithValue("@Id", Convert.ToString(cliente.Id));
-            cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
-            cmd.Parameters.AddWithValue("@Email", cliente.Email);
-            cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+            cmd.CommandText = proc;
+            //cmd.Parameters.AddWithValue("@Id", Convert.ToString(cliente.Id));
+            //cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
+            //cmd.Parameters.AddWithValue("@Email", cliente.Email);
+            //cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
 
             con.Open();
             cmd.ExecuteNonQuery();
@@ -52,7 +58,7 @@ namespace Empresa.Db
 
             var cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "DELETE Cliente WHERE Id = @Id";
+            cmd.CommandText = "DELETE Entidade WHERE Id = @Id";
             cmd.Parameters.AddWithValue("@Id", Convert.ToString(cliente.Id));
 
             con.Open();
@@ -62,7 +68,7 @@ namespace Empresa.Db
 
         public List<Cliente> Listar()
         {
-            string sql = "SELECT Id, Nome, Telefone, Email FROM Cliente";
+            string sql = "SELECT Id, Nome, Telefone, Email FROM Entidade";
             var con = new SqlConnection(Db.Conexao);
             var cmd = new SqlCommand(sql, con);
 
