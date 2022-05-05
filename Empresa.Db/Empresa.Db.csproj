@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ClienteDb.cs" />
     <Compile Include="Db.cs" />
+    <Compile Include="LoteDb.cs" />
     <Compile Include="ProdutoDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
