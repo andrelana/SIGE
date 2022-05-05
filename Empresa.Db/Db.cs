@@ -13,7 +13,7 @@ namespace Empresa.Db
             get
             {
                 //return @"Data Source=DESKTOP-T4EL1IC;Initial Catalog=EmpresaDb;Integrated Security=True;";
-                return @"Data Source=192.168.50.163;Initial Catalog=EmpresaDb;User ID=disbbyweb;Password=disbbyweb;";
+                return @"Data Source=192.168.1.71;Initial Catalog=EmpresaDb;User ID=disbbyweb;Password=disbbyweb;";
 
             }
         }

@@ -11,5 +11,6 @@ namespace Empresa.Models
         public int cod_produto { get; set; }
         public string descricao { get; set; }
         public int cod_situacao { get; set; }
+        
     }
 }

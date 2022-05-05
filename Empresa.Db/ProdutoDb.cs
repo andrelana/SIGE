@@ -35,5 +35,19 @@ namespace Empresa.Db
             con.Close();
             return lista;
         }
+        public void IncluirProduto(Produto produto)
+        {
+            var con = new SqlConnection(Db.Conexao);
+            var cmd = new SqlCommand();
+            string Execute = "exec stp_ed_inclui_produto ";
+            Execute += "'" + produto.descricao + "',";
+            Execute += "'" + produto.cod_situacao + "'";
+            cmd.Connection = con;
+            cmd.CommandText = Execute;
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

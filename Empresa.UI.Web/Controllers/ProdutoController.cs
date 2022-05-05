@@ -1,4 +1,5 @@
 ﻿using Empresa.Db;
+using Empresa.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,11 +32,12 @@ namespace Empresa.UI.Web.Controllers
 
         // POST: Produto/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Produto produto)
         {
             try
             {
-                // TODO: Add insert logic here
+                var db = new ProdutoDb();
+                db.IncluirProduto(produto);
 
                 return RedirectToAction("Index");
             }
