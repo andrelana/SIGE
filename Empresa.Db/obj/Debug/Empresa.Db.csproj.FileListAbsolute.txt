@@ -25,3 +25,12 @@ C:\PROJETOS\SIGE\Empresa.Db\obj\Debug\Empresa.Db.csproj.CoreCompileInputs.cache
 C:\PROJETOS\SIGE\Empresa.Db\obj\Debug\Empresa.Db.csproj.CopyComplete
 C:\PROJETOS\SIGE\Empresa.Db\obj\Debug\Empresa.Db.dll
 C:\PROJETOS\SIGE\Empresa.Db\obj\Debug\Empresa.Db.pdb
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\bin\Debug\Empresa.Db.dll
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\bin\Debug\Empresa.Db.pdb
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\bin\Debug\Empresa.Models.dll
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\bin\Debug\Empresa.Models.pdb
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\obj\Debug\Empresa.Db.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\obj\Debug\Empresa.Db.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\obj\Debug\Empresa.Db.csproj.CopyComplete
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\obj\Debug\Empresa.Db.dll
+C:\Users\Usuario\source\repos\SIGE\Empresa.Db\obj\Debug\Empresa.Db.pdb
